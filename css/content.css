@@ -55,6 +55,7 @@
 }
 .dokuwiki img.medialeft {
     margin: .2em 1em .2em 0;
+    margin-right: 2em;
 }
 .dokuwiki img.mediaright {
     margin: .2em 0 .2em 1em;
