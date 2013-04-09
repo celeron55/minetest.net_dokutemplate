@@ -62,6 +62,7 @@ if ($ID != "start"){$p_tit = ucfirst($ID) . " - " . $p_tit;}
 <?php 
 $tab_title = ucfirst(hsc($ID));
 if ($ID == 'irc') {$tab_title = strtoupper($ID);}
+if ($ID == 'texturepacks') {$tab_title = "Texture Packs";}
 echo $tab_title; ?></span></div>
 
                 <div class="page group">
