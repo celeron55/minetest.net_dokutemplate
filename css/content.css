@@ -52,6 +52,7 @@
 /* embedded images (styles are already partly set in lib/styles/all.css) */
 .dokuwiki img.media {
     margin: .2em 0;
+    margin-right:1em;
 }
 .dokuwiki img.medialeft {
     margin: .2em 1em .2em 0;
