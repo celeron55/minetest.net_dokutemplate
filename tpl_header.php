@@ -27,10 +27,11 @@ if (!defined('DOKU_INC')) die();
 	            <li><a href='http://forum.minetest.net/viewforum.php?id=4' class='sub_ex'>all Packs</a></li>
 	           </ul>
                 </li>
-               <li><a href='./doku.php?id=contributors'>Community</a>
+               <li><a href='./doku.php?id=community'>Community</a>
 	           <ul>
+	            <li><a href='./doku.php?id=community' class='sub'>Overview</a></li>
 	            <li><a href='http://forum.minetest.net/' class='sub_ex'>Forum</a></li>
-	            <li><a href='./doku.php?id=irc' class='sub'>IRC Channels</a></li>
+	            <li><a href='./doku.php?id=irc' class='sub'>IRC</a></li>
 	            <li><a href='./doku.php?id=contributors' class='sub'>Contributors</a></li>
 	           </ul>
                 </li>
