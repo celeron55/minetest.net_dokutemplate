@@ -22,7 +22,8 @@ $showSidebar = $hasSidebar && ($ACT=='show');
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
 <?php
 $p_tit = strip_tags($conf['title']);
-if ($ID != "start"){$p_tit .= " - " . ucfirst($ID);}
+//if ($ID != "start"){$p_tit .= " - " . ucfirst($ID);}
+if ($ID != "start"){$p_tit = ucfirst($ID) . " - " . $p_tit;}
     echo "<title>" . $p_tit . "</title>";
 ?>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
