@@ -1,0 +1,6 @@
+base			dokuwiki
+author   		BlockMen
+original-author	Anika Henke
+date			2013-04-08
+name			Minetest Template
+desc			Modified DokuWiki's default template

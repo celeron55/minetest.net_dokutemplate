@@ -1,0 +1,98 @@
+#menu {
+padding:0;
+margin:0;
+}
+
+#menu ul {
+padding:0;
+margin:0;
+list-style-type:none;
+}
+
+#menu a.sub:link,
+#menu ul ul li a:link {
+display:block;
+min-width:120px;
+height:22px;
+font-size:16px;
+text-decoration:none;
+text-align:left;
+line-height:22px;
+color:#404040;
+margin:0;
+}
+
+#menu a.sub:hover,
+#menu ul ul li a:hover {
+color:#FF0000;
+}
+
+#menu ul ul {
+position:absolute;
+width:auto;
+z-index:122;
+display:none;
+padding:0;
+margin:0;
+}
+
+#menu li {
+position:relative;
+display:block;
+width:auto;
+padding:0;
+margin:0;
+float:left;
+margin-right:10px;
+}
+
+#menu ul li:hover ul {
+display:block;
+background:#EEF8FF;
+}
+
+#menu ul li:hover {
+background-color:#EEF8FF;
+}
+
+#menu a:link,
+#menu a:visited {
+display:inline;
+width:auto;
+font-size:19px;
+text-decoration:none;
+color:#323232;
+background:none;
+padding-left:5px;
+padding-right:5px;
+font-weight:regular;
+font-family:"Calibri", sans-serif;
+font-size: 1.35em;
+}
+
+
+#menu a:hover,
+#menu a:visited:hover {
+color:#323232;
+background-color:#EEF8FF;
+text-decoration:underline;
+}
+
+#menu a.sub_ex:link {
+display:block;
+min-width:120px;
+height:22px;
+font-size:16px;
+text-decoration:none;
+text-align:left;
+line-height:22px;
+color:#404040;
+margin:0;
+background-image:url(./../../images/external-link.png);
+background-position:center right;
+background-repeat:no-repeat;
+}
+
+#menu a.sub_ex:hover {
+color:#FF0000;
+}
