@@ -54,7 +54,7 @@ if (!defined('DOKU_INC')) die();
                             echo "<a href='' style='font-weight:bold;font-size:16px';>" . $USERINFO['name'];
 				   } else { echo "<a href='' style='font-size:18px';'>Account";}
                             //substr(tpl_userinfo(),13); /* 'Logged in as ...' */
-                            echo '</a><ul>';
+                            echo '</a><ul><li><a href="./doku.php?id=' . $ID . '&do=recent" class="sub">Changelog</a></li>';
                       //  }
                         tpl_action('admin', 1, 'li');
                         tpl_action('profile', 1, 'li');
