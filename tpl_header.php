@@ -24,7 +24,7 @@ if (!defined('DOKU_INC')) die();
                <li><a href='./doku.php?id=texturepacks'>Texture Packs</a>
 	           <ul>
 	            <li><a href='./doku.php?id=texturepacks' class='sub'>Recommended</a></li>
-	            <li><a href='http://forum.minetest.net/viewforum.php?id=4' class='sub_ex'>all Packs</a></li>
+	            <li><a href='http://forum.minetest.net/viewforum.php?id=4' class='sub_ex'>All</a></li>
 	           </ul>
                 </li>
                <li><a href='./doku.php?id=community'>Community</a>
@@ -51,11 +51,8 @@ if (!defined('DOKU_INC')) die();
                     <?php
                         if ($_SERVER['REMOTE_USER']) {
 					 $USERINFO = $_SESSION[DOKU_COOKIE]['auth']['info'];
-                            echo "<a href='' style='font-weight:bold;font-size:16px';>" . $USERINFO['name'];
-				   } else { echo "<a href='' style='font-size:18px';'>Account";}
-                            //substr(tpl_userinfo(),13); /* 'Logged in as ...' */
-                            echo '</a><ul><li><a href="./doku.php?do=recent" class="sub">Changelog</a></li>';
-                      //  }
+                            echo "<a href='' style='font-weight:bold;font-size:16px';>" . $USERINFO['name'] . "</a><ul><li><a href="./doku.php?do=recent" class="sub">Changelog</a></li>";
+				   } else { echo "<a href='' style='font-size:18px';'>Account</a><ul>";}
                         tpl_action('admin', 1, 'li');
                         tpl_action('profile', 1, 'li');
                         tpl_action('register', 1, 'li');
