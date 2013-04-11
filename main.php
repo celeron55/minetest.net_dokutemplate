@@ -9,8 +9,9 @@
 
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 
-//allow HTML for support-page to insert donate button
+//allow HTML for some pages
 if ($ID == 'support') {$conf['htmlok'] = true;}
+if ($ID == 'servers') {$conf['htmlok'] = true;}
 
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');

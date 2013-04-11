@@ -36,6 +36,7 @@ echo"
 	            <li><a href='http://forum.minetest.net/' class='sub_ex'>Forum</a></li>
 	            <li><a href='". $nav_pre . "irc' class='sub'>IRC</a></li>
 	            <li><a href='". $nav_pre . "contributors' class='sub'>Contributors</a></li>
+	            <li><a href='". $nav_pre . "servers' class='sub'>Servers</a></li>
 	           </ul>
                 </li>
 <li><a href='". $nav_pre . "development'>Development</a>
