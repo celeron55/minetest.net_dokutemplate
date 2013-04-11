@@ -19,7 +19,7 @@ if (!defined('DOKU_INC')) die();
         ?>
         <a href="http://www.dokuwiki.org/donate" title="Donate" <?php echo $target?>><img
             src="<?php echo tpl_basedir(); ?>images/button-donate.gif" width="80" height="15" alt="Donate" /></a>-->
-        <?php if (!$_SERVER['REMOTE_USER']) {echo" <a href='". $nav_pre . $ID ."&do=login'>Login</a> |";}?>
+        <?php if (!$_SERVER['REMOTE_USER']) {echo" <a href='". $nav_pre . $ID ."?do=login'>Login</a> |";}?>
         <a href="http://www.php.net" title="Powered by PHP" <?php echo $target?>><img
             src="<?php echo tpl_basedir(); ?>images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
         <a href="http://validator.w3.org/check/referer" title="Valid HTML5" <?php echo $target?>><img
