@@ -20,8 +20,8 @@ echo"
                <li><a href='". $nav_pre . "mods'>Mods</a>
 	           <ul>
 	            <li><a href='". $nav_pre . "mods' class='sub'>Recommended</a></li>
-	            <li><a href='http://forum.minetest.net/viewforum.php?id=11' class='sub_ex' style='min-width:130px;'>Mod Releases</a></li>
-	            <li><a href='http://forum.minetest.net/viewforum.php?id=9' class='sub_ex' style='min-width:130px;'>Modding General</a></li>
+	            <li><a href='http://forum.minetest.net/viewforum.php?id=11' class='sub_ex'>Mod Releases</a></li>
+	            <li><a href='http://forum.minetest.net/viewforum.php?id=9' class='sub_ex'>Modding General</a></li>
 	           </ul>
                 </li>
                <li><a href='". $nav_pre . "texturepacks'>Texture Packs</a>
