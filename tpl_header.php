@@ -55,14 +55,15 @@ echo"
                     <?php
                         if ($_SERVER['REMOTE_USER']) {
 					 $USERINFO = $_SESSION[DOKU_COOKIE]['auth']['info'];
-                            echo "<a href='' style='font-weight:bold;font-size:16px';>" . $USERINFO['name'] . "</a><ul><li><a href='". $nav_pre . $ID ."&do=recent' class='sub'>Changelog</a></li>";
+                            echo "<li style='float:right;'><a href='' style='font-weight:bold;font-size:16px';>" . $USERINFO['name'] . "</a><ul><li><a href='". $nav_pre . $ID ."&do=recent' class='sub'>Changelog</a></li>";
 				  
                         tpl_action('admin', 1, 'li');
                         tpl_action('profile', 1, 'li');
                         tpl_action('register', 1, 'li');
-                        tpl_action('login', 1, 'li'); }
+                        tpl_action('login', 1, 'li'); 
+			echo "</ul></li>";}
                     ?>
-                </ul></li></ul>
+              </ul>
             </div>
 
     <?php tpl_includeFile('header.html') ?>
