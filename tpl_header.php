@@ -49,7 +49,7 @@ echo"
 	<li><a href='http://c55.me/blog' class='sub_ex'>Blog</a></li>
 	</ul>
 </li>
-<li><a href='". $nav_pre . "support'>Support</a></li>";
+<li><a href='". $nav_pre . "support'>Donate</a></li>";
 ?>
 <li style='float:right;'>
                     <?php
