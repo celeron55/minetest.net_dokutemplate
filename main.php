@@ -27,9 +27,7 @@ if ($ID != "start"){$p_tit = ucfirst($ID) . " - " . $p_tit;}
     echo "<title>" . $p_tit . "</title>";
 ?>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="Minetest is an infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft and the like. It is Free and Open Source Software available for Windows, Mac OS X and Linux." />
-    <meta name="keywords" content="Minetest, minetest, minetest c55, c55, InfiniMiner, infiniminer, Minecraft, minecraft" />
+    <?php tpl_metaheaders() ?>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html') ?>
