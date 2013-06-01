@@ -24,6 +24,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 $p_tit = strip_tags($conf['title']);
 //if ($ID != "start"){$p_tit .= " - " . ucfirst($ID);}
 if ($ID != "start"){$p_tit = ucfirst($ID) . " - " . $p_tit;}
+    $p_tit = str_replace("_", " ", $p_tit); 
     echo "<title>" . $p_tit . "</title>";
 ?>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
@@ -62,6 +63,7 @@ if ($ID != "start"){$p_tit = ucfirst($ID) . " - " . $p_tit;}
                 <div class="pageId"><span>
 <?php 
 $tab_title = ucfirst(hsc($ID));
+$tab_title = str_replace("_", " ", $tab_title); 
 if ($ID == 'irc') {$tab_title = strtoupper($ID);}
 if ($ID == 'texturepacks') {$tab_title = "Texture Packs";}
 echo $tab_title; ?></span></div>
