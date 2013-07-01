@@ -34,7 +34,7 @@ echo"
 	           <ul>
 	            <li><a href='". $nav_pre . "community' class='sub'>Overview</a></li>
 	            <li><a href='http://forum.minetest.net/' class='sub_ex'>Forum</a></li>
-	            <li><a href='http://wiki.minetest.com/wiki/' class='sub_ex'>Wiki</a></li>
+	            <li><a href='http://wiki.minetest.net/' class='sub_ex'>Wiki</a></li>
 	            <li><a href='". $nav_pre . "irc' class='sub'>IRC</a></li>
 	            <li><a href='". $nav_pre . "contributors' class='sub'>Contributors</a></li>
 	            <li><a href='". $nav_pre . "servers' class='sub'>Servers</a></li>
