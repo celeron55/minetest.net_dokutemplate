@@ -12,68 +12,17 @@ if (!defined('DOKU_INC')) die();
 <?php 
 $nav_pre = "./doku.php?id=";
 if ($conf['userewrite'] == 1) {$nav_pre = "./";} 
-echo"
-              <div id='menu'>
-              <ul>
-               <li><a href='./'>Home</a></li>
-               <li><a href='". $nav_pre . "download'>Download</a></li>
-               <li><a href='". $nav_pre . "mods'>Mods</a>
-	           <ul>
-	            <li><a href='". $nav_pre . "mods' class='sub'>Popular</a></li>
-	            <li><a href='http://forum.minetest.net/viewforum.php?id=11' class='sub_ex'>Mod Releases</a></li>
-	            <li><a href='http://forum.minetest.net/viewforum.php?id=9' class='sub_ex'>Modding General</a></li>
-	           </ul>
-                </li>
-               <li><a href='". $nav_pre . "texturepacks'>Texture Packs</a>
-	           <ul>
-	            <li><a href='". $nav_pre . "texturepacks' class='sub'>Popular</a></li>
-	            <li><a href='http://forum.minetest.net/viewforum.php?id=4' class='sub_ex'>All</a></li>
-	           </ul>
-                </li>
-               <li><a href='". $nav_pre . "community'>Community</a>
-	           <ul>
-	            <li><a href='". $nav_pre . "community' class='sub'>Overview</a></li>
-	            <li><a href='http://forum.minetest.net/' class='sub_ex'>Forum</a></li>
-	            <li><a href='http://wiki.minetest.net/' class='sub_ex'>Wiki</a></li>
-	            <li><a href='". $nav_pre . "irc' class='sub'>IRC</a></li>
-	            <li><a href='". $nav_pre . "contributors' class='sub'>Contributors</a></li>
-	            <li><a href='". $nav_pre . "servers' class='sub'>Servers</a></li>
-	           </ul>
-                </li>
-<li><a href='". $nav_pre . "development'>Development</a>
-	<ul>
-	<li><a href='". $nav_pre . "development' class='sub'>Overview</a></li>
-	<li><a href='https://github.com/minetest/' class='sub_ex'>Github</a></li>
-	<li><a href='http://dev.minetest.net/Main_Page' class='sub_ex'>Developer Wiki</a></li>
-	<li><a href='http://dev.minetest.net/Intro' class='sub_ex'>API</a></li>
-	<li><a href='http://c55.me/blog' class='sub_ex'>Blog</a></li>
-	</ul>
-</li>
-<li><a href='". $nav_pre . "support'>Donate</a></li>";
-?>
-<li style='float:right;'>
-                    <?php
-                        if ($_SERVER['REMOTE_USER']) {
-					 $USERINFO = $_SESSION[DOKU_COOKIE]['auth']['info'];
-                            echo "<li style='float:right;'><a href='' style='font-weight:bold;font-size:16px';>" . $USERINFO['name'] . "</a><ul><li><a href='". $nav_pre . $ID ."&do=recent' class='sub'>Changelog</a></li>";
-				  
-                        tpl_action('admin', 1, 'li');
-                        tpl_action('profile', 1, 'li');
-                        tpl_action('register', 1, 'li');
-                        tpl_action('login', 1, 'li'); 
-			echo "</ul></li>";}
-                    ?>
-              </ul>
-            </div>
 
-    <?php tpl_includeFile('header.html') ?>
+    include('menu.php');
+    tpl_includeFile('header.html');
+ echo "
 
-    <div class="headings group">
-        <ul class="a11y skip">
-            <li><a href="#dokuwiki__content"><?php echo $lang['skip_to_content']; ?></a></li>
+    <div class='headings group'>
+        <ul class='a11y skip'>
+            <li><a href='#dokuwiki__content'>" . $lang['skip_to_content'] . "</a></li>
         </ul>
 
-        <h1><?php
+        <h1>";
             // get logo either out of the template images folder or data/media folder
             $logoSize = array();
             $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
